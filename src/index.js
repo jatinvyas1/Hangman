@@ -38,10 +38,13 @@ let words = [
   "BURGMAN",
   "MONTREAL",
   "IMPOSSIBLE",
-  "INTERSTELLAR"
+  "INTERSTELLAR",
+  "MISSION",
+  "FAST",
+  "FURIOUS"
 ];
 // Math.round(Math.random() * 7)
-let currentWord = words[Math.round(Math.random() * 7)];
+let currentWord = words[Math.round(Math.random() * words.length)];
 let inputDiv = document.getElementById("input");
 
 for (let i = 0; i < currentWord.length; i++) {
