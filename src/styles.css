@@ -1,0 +1,70 @@
+body {
+  font-family: sans-serif;
+  background-color: #f1f3f8;
+}
+
+.poora {
+  height: 100vh;
+  width: 100vw;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4em;
+}
+
+.box {
+  display: flex;
+  height: 60%;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  display: flex;
+  height: 60%;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#buttons {
+  padding: 20px;
+}
+#hint,
+#reset {
+  padding: 0 10px;
+  margin: 0 10px;
+}
+
+.inputOptions {
+  margin: 2px;
+}
+.inputSpace {
+  margin-top: 100px;
+}
+
+.hide {
+  display: none;
+}
+
+.inputBlank {
+  display: flex;
+  border-bottom: 3px solid gray;
+  font-size: 30px;
+  justify-content: center;
+  align-items: center;
+
+  margin: 5px;
+  width: 30px;
+  height: 30px;
+}
+
+.message {
+  font-family: "Lobster", cursive;
+  text-shadow: 2px 0 #232931;
+  font-size: 2rem;
+  color: #4ecca3;
+}

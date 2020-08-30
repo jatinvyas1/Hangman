@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+
+    <title>Hangman</title>
+  </head>
+
+  <body>
+    <div class="container poora">
+      <header>
+        <div class="row justify-content-around">
+          <div class="col logo" id="logo"></div>
+        </div>
+      </header>
+      <div class="row justify-content-around">
+        <div class="col main hint">
+          <button class="btn btn-primary" id="hint">Hint</button>
+          <button class="btn btn-primary hide" id="reset">Try Again</button>
+        </div>
+        <div class="col main points" id="points"></div>
+      </div>
+      <div class="row justify-content-around">
+        <div class="main message" id="message"></div>
+      </div>
+      <div class="row justify-content-around">
+        <div class="col-xl-12 main">
+          <div class="container">
+            <div class="row justify-content-around">
+              <div class="col-sm-6 main" id="animation">
+                <img
+                  height="300em"
+                  width="200em"
+                  src="src/0.svg"
+                  alt=""
+                  id="img0"
+                />
+                <img
+                  height="300em"
+                  width="200em"
+                  src="src/1.svg"
+                  alt=""
+                  class="hide"
+                  id="img1"
+                />
+                <img
+                  height="300em"
+                  width="200em"
+                  src="src/2.svg"
+                  alt=""
+                  class="hide"
+                  id="img2"
+                />
+                <img
+                  height="300em"
+                  width="200em"
+                  src="src/3.svg"
+                  alt=""
+                  class="hide"
+                  id="img3"
+                />
+                <img
+                  height="300em"
+                  width="200em"
+                  src="src/4.svg"
+                  alt=""
+                  class="hide"
+                  id="img4"
+                />
+                <img
+                  height="300em"
+                  width="200em"
+                  src="src/5.svg"
+                  alt=""
+                  class="hide"
+                  id="img5"
+                />
+                <img
+                  height="300em"
+                  width="200em"
+                  src="src/6.svg"
+                  alt=""
+                  class="hide"
+                  id="img6"
+                />
+              </div>
+              <div class="col-sm-6 main" id="right">
+                <div class="container">
+                  <div class="row">
+                    <div class="col main inputSpace" id="input"></div>
+                  </div>
+                  <div class="row">
+                    <div class="col main" id="buttons"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
