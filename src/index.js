@@ -176,3 +176,15 @@ const resetButton = () => {
 };
 
 updatePoints();
+
+document.addEventListener("keydown", (event) => {
+  if (event.which >= 65 && event.which <= 90 && !gameOver) {
+    let temp = document.getElementById("buttons").firstChild;
+    while (temp.innerHTML.charCodeAt(0) !== event.which) {
+      temp = temp.nextSibling;
+    }
+    guess(temp, event.which);
+  } else {
+    return;
+  }
+});
