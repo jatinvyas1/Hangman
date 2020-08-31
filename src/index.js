@@ -44,7 +44,7 @@ let words = [
   "FURIOUS"
 ];
 // Math.round(Math.random() * 7)
-let currentWord = words[Math.round(Math.random() * words.length - 1)];
+let currentWord = words[Math.round(Math.random() * (words.length - 1))];
 let inputDiv = document.getElementById("input");
 
 for (let i = 0; i < currentWord.length; i++) {
@@ -149,7 +149,7 @@ const resetButton = () => {
     temp = temp.nextSibling;
   }
   gameOver = false;
-  currentWord = words[Math.round(Math.random() * words.length - 1)];
+  currentWord = words[Math.round(Math.random() * (words.length - 1))];
   lettersCorrect = [];
   hintCount = 0;
   while (inputDiv.firstChild) {
